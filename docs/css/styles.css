@@ -1,0 +1,44 @@
+:root {
+  --site-hero-from: color-mix(in oklch, var(--bs-primary-bg, #0d6efd) 18%, transparent);
+  --site-hero-to: color-mix(in oklch, var(--bs-bg-2, #f8f9fa) 70%, transparent);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.site-hero {
+  background:
+    radial-gradient(1200px 400px at 10% -10%, var(--site-hero-from), transparent 60%),
+    linear-gradient(180deg, var(--site-hero-to), transparent 80%);
+}
+
+.site-hero-mark {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar-brand-mark {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-success[hidden] {
+  display: none !important;
+}

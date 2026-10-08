@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home · Bryce</title>
+    <meta name="description" content="A static three-page site for Bryce: home, about, and contact.">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="navbar-brand-mark d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
+            <i class="bi bi-layers" aria-hidden="true"></i>
+          </span>
+          Bryce
+        </a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#siteNavHome"
+          aria-controls="siteNavHome"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="siteNavHome" aria-labelledby="siteNavHomeLabel">
+          <div class="drawer-header">
+            <h2 class="drawer-title h5" id="siteNavHomeLabel">Menu</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="nav navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <main>
+      <section class="site-hero py-5">
+        <div class="container lg:py-5">
+          <div class="row align-items-center gy-4">
+            <div class="lg:col-7">
+              <p class="text-uppercase small fw-semibold text-primary mb-2">Static site · Bootstrap 6</p>
+              <h1 class="display-4 fw-bold mb-3">Hello. I’m Bryce.</h1>
+              <p class="lead mb-4">
+                I design and build clear, useful web pages. This site is a static three-page
+                snapshot of who I am, what I care about, and how to reach me.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn-solid theme-primary" href="about.html">About me</a>
+                <a class="btn-outline theme-primary" href="contact.html">Get in touch</a>
+              </div>
+            </div>
+            <div class="lg:col-5">
+              <div class="card shadow-sm">
+                <div class="card-body p-4">
+                  <div class="site-hero-mark d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white mb-3">
+                    <i class="bi bi-code-slash fs-3" aria-hidden="true"></i>
+                  </div>
+                  <h2 class="h4 card-title">Currently</h2>
+                  <p class="card-text mb-0">
+                    Building readable HTML, learning modern CSS, and shipping small sites that
+                    work without a backend.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row gy-3 mb-4">
+            <div class="lg:col-8">
+              <h2 class="h3 mb-2">What you’ll find here</h2>
+              <p class="mb-0 text-body-secondary">Three pages, one story: who I am, what I’m about, and how to start a conversation.</p>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="md:col-4">
+              <article class="card h-100">
+                <div class="card-body">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary mb-3">
+                    <i class="bi bi-house-door" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h5 card-title">Home</h3>
+                  <p class="card-text">A short introduction and the starting point for the rest of the site.</p>
+                </div>
+              </article>
+            </div>
+            <div class="md:col-4">
+              <article class="card h-100">
+                <div class="card-body">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary mb-3">
+                    <i class="bi bi-person" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h5 card-title">About me</h3>
+                  <p class="card-text">Background, interests, and the kind of work I like to spend time on.</p>
+                </div>
+              </article>
+            </div>
+            <div class="md:col-4">
+              <article class="card h-100">
+                <div class="card-body">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary mb-3">
+                    <i class="bi bi-envelope" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h5 card-title">Contact</h3>
+                  <p class="card-text">A simple form and a few other ways to say hello.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-top py-4 mt-auto bg-1">
+      <div class="container d-flex flex-wrap justify-content-between gap-2">
+        <p class="mb-0 small">© 2026 Bryce. Static HTML in <code>docs</code>.</p>
+        <p class="mb-0 small">Themed with Bootstrap 6.0.0-alpha.1</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
